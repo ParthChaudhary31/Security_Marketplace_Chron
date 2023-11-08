@@ -1,0 +1,8 @@
+version: "2"
+services:
+  audit_bazaar_cron:
+    ports:
+      - '0.0.0.0:9001:9001'
+    container_name: audit_bazaar_cron
+    restart: always
+    build: ./event_cron
